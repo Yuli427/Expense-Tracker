@@ -1,0 +1,331 @@
+.manage-budget {
+  width: 100%;
+  max-width: 1300px; 
+
+  
+
+  font-family: "Courier New", monospace;
+  color: #3f3437;
+}
+
+.manage-budget h2 {
+  margin-bottom: 8px;
+
+  font-family: "Courier New", monospace;
+  font-size: 26px;
+  font-weight: 700;
+
+  color: #3f3437;
+}
+
+.manage-budget-subtitle {
+  margin-bottom: 24px;
+
+  font-size: 16px;
+  color: #6f5f63;
+}
+
+
+/* budget list */
+
+.budget-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.manage-budget-row {
+  display: grid;
+  grid-template-columns: 1fr 120px 150px;
+  align-items: center;
+
+  padding: 18px 20px;
+
+  background: #fffdf9;
+
+  border: 3px solid #806b70;
+  border-radius: 12px;
+
+  box-shadow: 5px 5px 0 #dff2ff;
+
+   margin-bottom: 20px;
+}
+
+.manage-budget-row strong {
+  display: block;
+
+  margin-bottom: 6px;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  color: #3f3437;
+}
+
+.manage-budget-row p {
+  margin: 0;
+
+  font-size: 16px;
+  color: #6f5f63;
+}
+
+.manage-budget-row > span {
+  font-size: 17px;
+  font-weight: 700;
+
+  color: #3f3437;
+}
+
+.budget-numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  position: relative;
+  left: -100px;
+  bottom: -15px;
+  
+
+  font-family: "Courier New", monospace;
+  color: #3f3437;
+}
+
+.budget-numbers p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #6f5f63;
+  
+}
+
+
+/* edit + delete buttons */
+
+.manage-budget-actions {
+  display: flex;
+  gap: 10px;
+  
+}
+
+.manage-budget-actions button {
+  padding: 8px 12px;
+
+  border: 2px solid #806b70;
+  border-radius: 7px;
+
+  box-shadow: 2px 2px 0 #806b70;
+
+  font-family: "Courier New", monospace;
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+}
+
+.manage-budget-actions button:first-child {
+  background: #dff2ff;
+  color: #3f3437;
+}
+
+.manage-budget-actions button:last-child {
+  background: #ffd4dd;
+  color: #3f3437;
+}
+
+.manage-budget-actions button:hover {
+  transform: translateY(-1px);
+}
+
+.manage-budget-actions button:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+
+/* edit budget form */
+
+.edit-budget-form {
+  width: 420px;
+
+  margin-bottom: 28px;
+  padding: 24px;
+
+  background: #fffdf9;
+
+  border: 3px solid #806b70;
+  border-radius: 12px;
+
+  box-shadow: 6px 6px 0 #dff2ff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  font-family: "Courier New", monospace;
+  color: #3f3437;
+}
+
+.edit-budget-form h3 {
+  margin: 0 0 6px;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  color: #3f3437;
+}
+
+.edit-budget-form input,
+.edit-budget-form select {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 11px 12px;
+
+  background: #fffdf9;
+
+  border: 2px solid #806b70;
+  border-radius: 8px;
+
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+
+  outline: none;
+  color: #3f3437;
+}
+
+.edit-budget-form input:focus,
+.edit-budget-form select:focus {
+  box-shadow: 3px 3px 0 #dff2ff;
+}
+
+
+/* save + cancel */
+
+.edit-budget-form button {
+  padding: 10px 14px;
+
+  border: 2px solid #806b70;
+  border-radius: 8px;
+
+  box-shadow: 3px 3px 0 #806b70;
+
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.edit-budget-form button:first-of-type {
+  background: #dff2ff;
+  color: #3f3437;
+}
+
+.edit-budget-form button:last-of-type {
+  background: #ffd4dd;
+  color: #3f3437;
+}
+
+.edit-budget-form button:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+/* add budget */
+
+.add-budget-form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 28px;
+  padding: 18px;
+
+  background: #fffdf9;
+
+  border: 3px solid #806b70;
+  border-radius: 12px;
+
+  box-shadow: 5px 5px 0 #ffd4dd;
+}
+
+.add-budget-form h3 {
+  margin: 0 10px 0 0;
+
+  font-size: 18px;
+  color: #3f3437;
+}
+
+.add-budget-form input,
+.add-budget-form select {
+  padding: 10px 12px;
+
+  border: 2px solid #806b70;
+  border-radius: 8px;
+
+  background: #fffdf9;
+
+  font-family: "Courier New", monospace;
+  font-size: 15px;
+
+  color: #3f3437;
+
+  outline: none;
+}
+
+.add-budget-form input[type="number"] {
+  width: 150px;
+  color: #3f3437;
+}
+
+.add-budget-form input[type="month"] {
+  width: 160px;
+  
+}
+
+.add-budget-form select {
+  width: 170px;
+  color: #3f3437;
+}
+
+.add-budget-form button {
+  padding: 10px 16px;
+
+  background: #dff2ff;
+
+  border: 2px solid #806b70;
+  border-radius: 8px;
+
+  box-shadow: 3px 3px 0 #806b70;
+
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  color: #3f3437;
+
+  cursor: pointer;
+}
+
+.add-budget-form button:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+.budget-progress-label {
+  display: inline-block;
+
+  margin-top: 8px;
+  padding: 6px 10px;
+
+  background: #fff4f7;
+
+  border: 2px solid #806b70;
+  border-radius: 8px;
+
+  box-shadow: 2px 2px 0 #806b70;
+
+  font-size: 20px;
+  font-weight: 700;
+  color: #3f3437;
+}

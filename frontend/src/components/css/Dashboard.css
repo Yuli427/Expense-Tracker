@@ -1,0 +1,510 @@
+.dashboard {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100vh;
+  align-items: flex-start;
+}
+
+.dashboard-main {
+  flex: 1;
+  min-height: 100vh;
+  padding: 40px 40px 40px 100px;
+
+  box-sizing: border-box;
+
+  background: #fff7ed;
+  color: #5c4a4a;
+
+  font-family: "Courier New", monospace;
+}
+
+.dashboard-actions {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+
+
+/* add expense button */
+.add-expense-button {
+  padding: 12px 18px;
+
+  background: #ffd4dd;
+  color: #5a454b;
+
+  border: 2px solid #806b70;
+  border-radius: 8px;
+
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 4px 4px 0 #d7bcc3;
+}
+
+.add-expense-button:hover {
+  background: #ffc4d1;
+}
+
+.add-expense-button:active {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 #d7bcc3;
+}
+
+
+/* add expense card */
+.add-expense-card {
+  width: 320px;
+  padding: 24px;
+
+  background: #fffdf9;
+
+  border: 3px solid #806b70;
+  border-radius: 12px;
+
+  box-shadow: 6px 6px 0 #e7bfc8;
+
+  text-align: left;
+}
+
+.add-expense-card h2 {
+  margin: 0 0 8px;
+
+  font-family: "Courier New", monospace;
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #5b4a4f;
+}
+
+.add-expense-card p {
+  margin: 0 0 18px;
+
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+
+  color: #8b747b;
+}
+
+
+/* ai card */
+.ai-card {
+  width: 320px;
+  padding: 24px;
+
+  background: #dff2ff;
+
+  border: 3px solid #806b70;
+  border-radius: 12px;
+
+  box-shadow: 6px 6px 0 #cde8fa;
+}
+
+.ai-card h2 {
+  margin: 0 0 8px;
+
+  font-family: "Courier New", monospace;
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #5b4a4f;
+}
+
+.ai-card p {
+  margin: 0 0 18px;
+
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+
+  color: #6f7f8b;
+}
+
+.ai-card input {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 12px 13px;
+  margin-bottom: 14px;
+
+  background: #fffdf9;
+
+  border: 2px solid #9bb8cc;
+  border-radius: 8px;
+
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+
+  color: #5c4a4a;
+
+  outline: none;
+
+  box-shadow: 3px 3px 0 #cde8fa;
+}
+
+.ai-card input:focus {
+  border-color: #86bde7;
+  background: #f8fcff;
+}
+
+.ai-card button {
+  padding: 12px 18px;
+
+  background: #b9ddff;
+  color: #4e5c68;
+
+  border: 2px solid #806b70;
+  border-radius: 8px;
+
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 4px 4px 0 #aacfe8;
+}
+
+
+/* add expense form */
+.expense-form {
+  width: 340px;
+  padding: 24px;
+
+  background: #fffdf9;
+
+  border: 3px solid #806b70;
+  border-radius: 12px;
+
+  box-shadow: 6px 6px 0 #e7bfc8;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  font-family: "Courier New", monospace;
+}
+
+.expense-form h2 {
+  margin: 0 0 6px;
+
+  font-family: "Courier New", monospace;
+  font-size: 22px;
+  font-weight: 800;
+
+  color: #5b4a4f;
+}
+
+.expense-form input,
+.expense-form select {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 12px 13px;
+
+  background: #fffafa;
+
+  border: 2px solid #bda8ae;
+  border-radius: 8px;
+
+  color: #594b50;
+
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+
+  outline: none;
+
+  box-shadow: 3px 3px 0 #f2d5dc;
+}
+
+.expense-form input:focus,
+.expense-form select:focus {
+  border-color: #86bde7;
+  background: #f8fcff;
+
+  box-shadow: 3px 3px 0 #cde8fa;
+}
+
+
+/* add expense form buttons */
+.expense-form button {
+  padding: 11px 16px;
+
+  border: 2px solid #806b70;
+  border-radius: 8px;
+
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 4px 4px 0 #d7bcc3;
+}
+
+
+/* date input */
+.expense-form input[type="date"] {
+  padding: 12px 14px;
+
+  background: #fffafa;
+  color: #5c4a4a;
+
+  border: 2px solid #bda8ae;
+  border-radius: 8px;
+
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+
+  box-shadow: 3px 3px 0 #f2d5dc;
+
+  cursor: pointer;
+  color-scheme: light;
+}
+
+
+/* recent expense */
+.recent-expenses {
+  margin-top: 36px;
+  width: 100%;
+  max-width: 760px;
+}
+
+.recent-expenses h2 {
+  margin-bottom: 16px;
+
+  font-family: "Courier New", monospace;
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #5b4a4f;
+}
+
+.recent-expenses > p {
+  color: #8b747b;
+  font-size: 16px;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px 18px;
+  margin-bottom: 12px;
+
+  background: #fffdf9;
+
+  border: 2px solid #bda8ae;
+  border-radius: 10px;
+
+  box-shadow: 4px 4px 0 #f2d5dc;
+}
+
+.expense-item strong {
+  display: block;
+
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #5b4a4f;
+}
+
+.expense-item p {
+  margin-top: 4px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #685d60;
+}
+
+.expense-item span {
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #955c63;
+}
+
+/* income */
+.add-income-card {
+  background: #fffdf9;
+  border: 3px solid #806b70;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 6px 6px 0 #ffd4dd;
+
+  font-family: "Courier New", monospace;
+}
+
+.add-income-card h2 {
+  margin: 0 0 10px;
+  font-family: "Courier New", monospace;
+  font-size: 22px;
+  font-weight: 700;
+  color: #3f3437;
+}
+
+.add-income-card p {
+  margin-bottom: 18px;
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  color: #6f5f63;
+}
+
+.add-income-button {
+  padding: 10px 16px;
+
+  background: #dff2ff;
+
+  border: 2px solid #806b70;
+  border-radius: 8px;
+
+  box-shadow: 3px 3px 0 #806b70;
+
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #3f3437;
+
+  cursor: pointer;
+}
+
+.add-income-button:hover {
+  transform: translateY(-2px);
+}
+
+.add-income-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #806b70;
+}
+
+
+
+/* add income form */
+
+.income-form {
+  width: 340px;
+
+  padding: 24px;
+
+  background: #fffdf9;
+
+  border: 3px solid #806b70;
+
+  border-radius: 12px;
+
+  box-shadow: 6px 6px 0 #dff2ff;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+
+  font-family: "Courier New", monospace;
+}
+
+.income-form h2 {
+  margin: 0 0 6px;
+
+  font-family: "Courier New", monospace;
+
+  font-size: 22px;
+
+  font-weight: 800;
+
+  color: #5b4a4f;
+}
+
+.income-form input,
+.income-form select {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 12px 13px;
+
+  background: #fffafa;
+
+  border: 2px solid #bda8ae;
+
+  border-radius: 8px;
+
+  color: #594b50;
+
+  font-family: "Courier New", monospace;
+
+  font-size: 16px;
+
+  outline: none;
+
+  box-shadow: 3px 3px 0 #f2d5dc;
+}
+
+.income-form input:focus,
+.income-form select:focus {
+  border-color: #86bde7;
+
+  background: #f8fcff;
+
+  box-shadow: 3px 3px 0 #cde8fa;
+}
+
+
+/* add income form buttons */
+
+.income-form button {
+  padding: 11px 16px;
+
+  border: 2px solid #806b70;
+
+  border-radius: 8px;
+
+  font-family: "Courier New", monospace;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 4px 4px 0 #d7bcc3;
+}
+
+
+/* income date input */
+
+.income-form input[type="date"] {
+  padding: 12px 14px;
+
+  background: #fffafa;
+
+  color: #5c4a4a;
+
+  border: 2px solid #bda8ae;
+
+  border-radius: 8px;
+
+  font-family: "Courier New", monospace;
+
+  font-size: 16px;
+
+  box-shadow: 3px 3px 0 #f2d5dc;
+
+  cursor: pointer;
+
+  color-scheme: light;
+}
+
+.ai-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  font-weight: 700;
+}

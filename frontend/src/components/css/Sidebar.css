@@ -1,0 +1,99 @@
+.sidebar {
+  width: 230px;
+  min-height: 100vh;
+  align-self: stretch;
+
+  padding: 24px 18px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #fffdf9;
+
+  border-right: 3px solid #806b70;
+  box-sizing: border-box;
+  box-shadow: 5px 0 0 #e7bfc8;
+}
+
+.sidebar-logo h2 {
+  margin: 0 0 35px;
+
+  color: #5b4a4f;
+
+  font-family: "Courier New", monospace;
+  font-size: 21px;
+  font-weight: 700;
+  
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-item {
+  width: 100%;
+
+  padding: 12px 14px;
+
+  border: 2px solid transparent;
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #6e5a60;
+
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  font-weight: 700;
+
+  text-align: left;
+  cursor: pointer;
+
+  transition: 0.1s ease;
+}
+
+.sidebar-item:hover {
+  background: #fff0f3;
+  border-color: #d7bcc3;
+
+  transform: translateX(3px);
+}
+
+.sidebar-item.active {
+  background: #ffd4dd;
+
+  border: 2px solid #806b70;
+
+  color: #5a454b;
+
+  box-shadow: 3px 3px 0 #d7bcc3;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logout button {
+  width: 100%;
+  padding: 10px 14px;
+
+  background: #ffd4dd;
+  color: #955c63;
+
+  border: 2px solid #806b70;
+  border-radius: 8px;
+
+  box-shadow: 3px 3px 0 #806b70;
+
+  font-family: "Courier New", monospace;
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+}

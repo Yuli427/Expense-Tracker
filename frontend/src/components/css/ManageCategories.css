@@ -1,0 +1,142 @@
+.manage-categories {
+  width: 100%;
+  max-width: 760px;
+
+  font-family: "Courier New", monospace;
+  text-align: left;
+}
+
+.manage-categories h2 {
+  margin-bottom: 8px;
+
+  font-family: "Courier New", monospace;
+  font-size: 26px;
+  font-weight: 700;
+
+  color: #3f3437;
+}
+
+.manage-categories-subtitle {
+  margin-bottom: 28px;
+
+  font-size: 13px;
+  color: #8b747b;
+}
+
+
+/* Add Category */
+.category-add-section {
+  display: flex;
+  gap: 12px;
+
+  margin-bottom: 28px;
+}
+
+.category-add-section input {
+  flex: 1;
+
+  padding: 12px 14px;
+
+  background: #fffafa;
+  color: #594b50;
+
+  border: 2px solid #bda8ae;
+  border-radius: 8px;
+
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+
+  outline: none;
+
+  box-shadow: 3px 3px 0 #f2d5dc;
+}
+
+.category-add-section input:focus {
+  border-color: #86bde7;
+  background: #f8fcff;
+
+  box-shadow: 3px 3px 0 #cde8fa;
+}
+
+.category-add-section button {
+  padding: 12px 18px;
+
+  background: #b9ddff;
+  color: #4e5c68;
+
+  border: 2px solid #806b70;
+  border-radius: 8px;
+
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 4px 4px 0 #aacfe8;
+}
+
+.category-add-section button:hover {
+  background: #a9d5f7;
+}
+
+
+/* Category List */
+.category-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.category-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 18px;
+
+  background: #fffdf9;
+
+  border: 2px solid #bda8ae;
+  border-radius: 10px;
+
+  box-shadow: 4px 4px 0 #f2d5dc;
+}
+
+.category-row span {
+  font-size: 14px;
+  font-weight: 700;
+
+  color: #5b4a4f;
+}
+
+.category-row button {
+  width: 55px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  background: #ffd4dd;
+  color: #955c63;
+
+  border: 2px solid #806b70;
+  border-radius: 7px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  box-shadow: 3px 3px 0 #d7bcc3;
+}
+
+.category-row button:hover {
+  background: #ffc4d1;
+}
+
+.category-row button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 #d7bcc3;
+}

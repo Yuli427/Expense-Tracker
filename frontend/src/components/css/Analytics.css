@@ -1,0 +1,214 @@
+.analytics {
+  width: 100%;
+  max-width: 1000px;
+
+  font-family: "Courier New", monospace;
+  color: #3f3437;
+}
+
+.analytics h2 {
+  margin-bottom: 8px;
+
+  font-family: "Courier New", monospace;
+  font-size: 26px;
+  font-weight: 700;
+
+  color: #3f3437;
+}
+
+.analytics-subtitle {
+  margin-bottom: 28px;
+
+  font-size: 16px;
+  color: #6f5f63;
+}
+
+.analytics-summary {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+.analytics-card {
+  padding: 20px;
+
+  background: #fffdf9;
+
+  border: 3px solid #806b70;
+  border-radius: 12px;
+
+  box-shadow: 5px 5px 0 #dff2ff;
+}
+
+.analytics-card p {
+  margin: 0 0 12px;
+
+  font-size: 16px;
+
+  color: #6f5f63;
+}
+
+.analytics-card h3 {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 800;
+
+  color: #3f3437;
+}
+
+/* ai */
+/* analytics ai chat */
+
+.analytics-ai {
+  margin-top: 32px;
+
+  width: 100%;
+  max-width: 900px;
+
+  padding: 24px;
+
+  background: #fffdf9;
+
+  border: 3px solid #806b70;
+  border-radius: 12px;
+
+  box-shadow: 6px 6px 0 #dff2ff;
+
+  font-family: "Courier New", monospace;
+}
+
+.analytics-ai h3 {
+  margin: 0 0 8px;
+
+  font-size: 22px;
+  font-weight: 800;
+
+  color: #3f3437;
+}
+
+.analytics-ai > p {
+  margin-bottom: 18px;
+
+  font-size: 16px;
+
+  color: #6f5f63;
+}
+
+
+/* input area */
+
+.analytics-ai-input {
+  display: flex;
+
+  gap: 12px;
+
+  align-items: center;
+}
+
+.analytics-ai-input input {
+  flex: 1;
+
+  padding: 12px 13px;
+
+  background: #fffafa;
+
+  border: 2px solid #bda8ae;
+  border-radius: 8px;
+
+  color: #594b50;
+
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  font-weight: 600;
+
+  outline: none;
+
+  box-shadow: 3px 3px 0 #f2d5dc;
+}
+
+.analytics-ai-input input:focus {
+  border-color: #86bde7;
+
+  background: #f8fcff;
+
+  box-shadow: 3px 3px 0 #cde8fa;
+}
+
+
+/* ask ai button */
+
+.analytics-ai-input button {
+  padding: 11px 18px;
+
+  background: #dff2ff;
+
+  color: #3f3437;
+
+  border: 2px solid #806b70;
+  border-radius: 8px;
+
+  box-shadow: 3px 3px 0 #806b70;
+
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.analytics-ai-input button:hover {
+  transform: translateY(-1px);
+}
+
+.analytics-ai-input button:active {
+  transform: translate(2px, 2px);
+
+  box-shadow: 1px 1px 0 #806b70;
+}
+
+.analytics-ai-input button:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* ai response */
+
+.analytics-ai-answer {
+  margin-top: 20px;
+
+  padding: 18px;
+
+  background: #f8fcff;
+
+  border: 2px solid #bda8ae;
+  border-radius: 10px;
+
+  box-shadow: 4px 4px 0 #dff2ff;
+}
+
+.analytics-ai-answer strong {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 17px;
+  font-weight: 800;
+
+  color: #3f3437;
+}
+
+.analytics-ai-answer p {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.6;
+
+  color: #594b50;
+}

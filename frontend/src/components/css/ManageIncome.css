@@ -1,0 +1,197 @@
+.manage-income {
+  width: 100%;
+  max-width: 900px;
+
+  font-family: "Courier New", monospace;
+  color: #3f3437;
+}
+
+.manage-income h2 {
+  margin-bottom: 8px;
+
+  font-family: "Courier New", monospace;
+  font-size: 26px;
+  font-weight: 700;
+  color: #3f3437;
+}
+
+.manage-income-subtitle {
+  margin-bottom: 24px;
+
+  font-size: 16px;
+  color: #6f5f63;
+}
+
+
+/* income list */
+
+.income-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.manage-income-row {
+  display: grid;
+  grid-template-columns: 1fr 120px 150px;
+  align-items: center;
+
+  padding: 18px 20px;
+
+  background: #fffdf9;
+
+  border: 3px solid #806b70;
+  border-radius: 12px;
+
+  box-shadow: 5px 5px 0 #dff2ff;
+}
+
+.manage-income-row strong {
+  display: block;
+
+  margin-bottom: 6px;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.manage-income-row p {
+  margin: 0;
+
+  font-size: 16px;
+  color: #6f5f63;
+}
+
+.manage-income-row > span {
+  font-size: 17px;
+  font-weight: 700;
+
+  color: #3f3437;
+}
+
+
+/* edit + delete buttons */
+
+.manage-income-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.manage-income-actions button {
+  padding: 8px 12px;
+
+  border: 2px solid #806b70;
+  border-radius: 7px;
+
+  box-shadow: 2px 2px 0 #806b70;
+
+  font-family: "Courier New", monospace;
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.manage-income-actions button:first-child {
+  background: #dff2ff;
+  color: #3f3437;
+}
+
+.manage-income-actions button:last-child {
+  background: #ffd4dd;
+  color: #3f3437;
+}
+
+.manage-income-actions button:hover {
+  transform: translateY(-1px);
+}
+
+.manage-income-actions button:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+
+/* edit income form */
+
+.edit-income-form {
+  width: 420px;
+
+  margin-bottom: 28px;
+  padding: 24px;
+
+  background: #fffdf9;
+
+  border: 3px solid #806b70;
+  border-radius: 12px;
+
+  box-shadow: 6px 6px 0 #dff2ff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  font-family: "Courier New", monospace;
+}
+
+.edit-income-form h3 {
+  margin: 0 0 6px;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.edit-income-form input,
+.edit-income-form select {
+  width: 100%;
+
+  padding: 11px 12px;
+
+  background: #fffdf9;
+
+  border: 2px solid #806b70;
+  border-radius: 8px;
+
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+
+  outline: none;
+}
+
+.edit-income-form input:focus,
+.edit-income-form select:focus {
+  box-shadow: 3px 3px 0 #dff2ff;
+}
+
+
+/* save + cancel */
+
+.edit-income-form button {
+  padding: 10px 14px;
+
+  border: 2px solid #806b70;
+  border-radius: 8px;
+
+  box-shadow: 3px 3px 0 #806b70;
+
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.edit-income-form button:first-of-type {
+  background: #dff2ff;
+  color: #3f3437;
+}
+
+.edit-income-form button:last-of-type {
+  background: #ffd4dd;
+  color: #3f3437;
+}
+
+.edit-income-form button:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}

@@ -1,0 +1,413 @@
+html,
+body,
+#root {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Courier New", monospace;
+  background: #fff7ed;
+  color: #5c4a4a;
+}
+
+.jornal-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    radial-gradient(circle at 20% 20%, #ffe0e6 0 7%, transparent 8%),
+    radial-gradient(circle at 80% 25%, #dff3ff 0 8%, transparent 9%),
+    radial-gradient(circle at 75% 80%, #fff0b8 0 7%, transparent 8%),
+    #fff7ed;
+}
+
+
+/* 框本身 */
+.jornal-titlebar,
+.jornal-window-body {
+  width: 420px;
+  box-sizing: border-box;
+  position: relative;
+  top: 100px;
+}
+
+
+/* 顶部 */
+.jornal-titlebar {
+  margin: 0 auto;
+  padding: 13px 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #b9ddff;
+  color: #514448;
+
+  border: 3px solid #806b70;
+  border-bottom: none;
+
+  border-radius: 12px 12px 0 0;
+
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+
+  box-shadow: 6px 6px 0 #e7bfc8;
+}
+
+
+/* 右上角小按钮 */
+.jornal-window-controls {
+  display: flex;
+  gap: 6px;
+}
+
+.jornal-window-controls span {
+  width: 10px;
+  height: 10px;
+
+  border: 2px solid #806b70;
+  border-radius: 2px;
+}
+
+.jornal-window-controls span:nth-child(1) {
+  background: #ffb8c6;
+}
+
+.jornal-window-controls span:nth-child(2) {
+  background: #ffe28a;
+}
+
+.jornal-window-controls span:nth-child(3) {
+  background: #bde8c8;
+}
+
+
+/* 主卡片 */
+.jornal-window-body {
+  margin: 0 auto;
+
+  padding: 32px;
+
+  background: #fffdf9;
+
+  border: 3px solid #806b70;
+
+  border-radius: 0 0 12px 12px;
+
+  box-shadow: 6px 6px 0 #e7bfc8;
+}
+
+
+/* 标题 */
+.jornal-login-heading {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.jornal-login-heading h2 {
+  margin: 0;
+
+  color: #5b4a4f;
+
+  font-size: 26px;
+  font-weight: bold;
+
+  letter-spacing: 1px;
+}
+
+.jornal-login-heading::after {
+  content: "✿ welcome back ✿";
+
+  display: block;
+
+  margin-top: 8px;
+
+  color: #b28b95;
+
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+
+/* 输入框 */
+.jornal-field {
+  margin-bottom: 20px;
+}
+
+.jornal-field label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #6e5a60;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.jornal-field .form-control {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 12px 13px;
+
+  background: #fffafa;
+
+  border: 2px solid #bda8ae;
+  border-radius: 8px;
+
+  color: #594b50;
+
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+
+  outline: none;
+
+  box-shadow: 3px 3px 0 #f2d5dc;
+
+  transition: 0.15s ease;
+}
+
+.jornal-field .form-control:focus {
+  border-color: #86bde7;
+
+  background: #f8fcff;
+
+  box-shadow: 4px 4px 0 #cde8fa;
+}
+
+.jornal-field .form-control::placeholder {
+  color: #c2b2b7;
+}
+
+
+/* 链接 */
+.jornal-links {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 22px 0 26px;
+
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.jornal-links a {
+  color: #8a73b4;
+
+  text-decoration: none;
+
+  border-bottom: 2px dotted #cbbbe3;
+}
+
+.jornal-links a:hover {
+  color: #66548b;
+}
+
+
+/* 按钮区域 */
+.jornal-actions {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.y2k-button,
+.jornal-button {
+  width: 100%;
+
+  padding: 12px 15px;
+
+  border: 2px solid #806b70;
+
+  border-radius: 8px;
+
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  box-shadow: 4px 4px 0 #d7bcc3;
+
+  transition: 0.1s ease;
+}
+
+
+/* Login */
+.y2k-button-primary {
+  background: #ffd4dd;
+  color: #5a454b;
+}
+
+.y2k-button-primary:hover {
+  background: #ffc4d1;
+}
+
+
+/* Create Account */
+.y2k-button-secondary {
+  background: #dff2ff;
+  color: #4e5c68;
+}
+
+.y2k-button-secondary:hover {
+  background: #cae9fc;
+}
+
+
+/* 像游戏按钮一样按下 */
+.y2k-button:active,
+.jornal-button:active {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 #d7bcc3;
+}
+
+
+/* Error */
+.alert-danger {
+  margin-bottom: 20px;
+
+  padding: 10px 12px;
+
+  background: #ffe0e0;
+
+  color: #955c63;
+
+  border: 2px solid #c89198;
+
+  border-radius: 8px;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  box-shadow: 3px 3px 0 #f1c7cc;
+}
+
+
+/* 手机 */
+@media (max-width: 520px) {
+  .jornal-titlebar,
+  .jornal-window-body {
+    width: calc(100% - 28px);
+  }
+
+  .jornal-window-body {
+    padding: 24px;
+  }
+
+  .jornal-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+.jornal-button-primary {
+  background: linear-gradient(
+    90deg,
+    #ff5faa,
+    #9b74ff
+  );
+
+  color: white;
+
+  border: none;
+
+  box-shadow:
+    0 5px 18px rgba(255, 83, 169, 0.22);
+
+  transition: 0.2s ease;
+}
+
+.jornal-button-primary:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 24px rgba(255, 83, 169, 0.32);
+}
+
+.jornal-button-primary:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none;
+}
+
+
+/* Resend Verification 标题下面的小字 */
+.jornal-login-heading p {
+  margin-top: 8px;
+  margin-bottom: 0;
+
+  color: #8ea9d9;
+
+  font-size: 12px;
+  line-height: 1.5;
+
+  letter-spacing: 0.4px;
+}
+
+
+/* Back to Login 单独居中 */
+.jornal-single-link {
+  justify-content: center;
+  text-align: center;
+
+  margin-top: 24px;
+}
+
+
+/* 如果成功提示之前还没有这套 */
+.alert-success {
+  margin-bottom: 20px;
+
+  padding: 14px 16px;
+
+  background: rgba(54, 211, 153, 0.16);
+
+  color: #19704b;
+
+  border: 1px solid rgba(111, 211, 173, 0.55);
+
+  border-radius: 5px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  box-shadow:
+    0 0 18px rgba(54, 211, 153, 0.12);
+}
+
+
+/* error */
+.alert-danger {
+  margin-bottom: 20px;
+
+  padding: 14px 16px;
+
+  background: rgba(255, 72, 110, 0.12);
+
+  color: #ff91aa;
+
+  border: 1px solid rgba(255, 91, 124, 0.45);
+
+  border-radius: 5px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  box-shadow:
+    0 0 18px rgba(255, 72, 110, 0.08);
+}
+
+
