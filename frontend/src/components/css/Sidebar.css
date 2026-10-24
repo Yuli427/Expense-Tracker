@@ -96,4 +96,10 @@
   font-weight: 700;
 
   cursor: pointer;
+  
 }
+.logout button:hover{
+
+  transform: translateY(-2px);
+}
+

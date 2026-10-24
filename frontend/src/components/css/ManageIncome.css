@@ -15,13 +15,6 @@
   color: #3f3437;
 }
 
-.manage-income-subtitle {
-  margin-bottom: 24px;
-
-  font-size: 16px;
-  color: #6f5f63;
-}
-
 
 /* income list */
 
@@ -35,15 +28,18 @@
   display: grid;
   grid-template-columns: 1fr 120px 150px;
   align-items: center;
+  gap: 18px;
 
-  padding: 18px 20px;
+  padding: 16px 18px;
 
   background: #fffdf9;
 
-  border: 3px solid #806b70;
-  border-radius: 12px;
+  border: 2px solid #bda8ae;
+  border-radius: 10px;
 
-  box-shadow: 5px 5px 0 #dff2ff;
+  box-shadow: 4px 4px 0 #f2d5dc;
+
+  position: relative;
 }
 
 .manage-income-row strong {
@@ -63,10 +59,12 @@
 }
 
 .manage-income-row > span {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 700;
 
-  color: #3f3437;
+  color: #955c63;
+
+  text-align: right;
 }
 
 
@@ -74,38 +72,47 @@
 
 .manage-income-actions {
   display: flex;
+  justify-content: flex-end;
   gap: 10px;
 }
 
 .manage-income-actions button {
-  padding: 8px 12px;
+
+  height: 36px;
+  padding: 0 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border: 2px solid #806b70;
   border-radius: 7px;
 
-  box-shadow: 2px 2px 0 #806b70;
-
   font-family: "Courier New", monospace;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
 
   cursor: pointer;
+
+  box-shadow: 3px 3px 0 #d7bcc3;
 }
+
 
 .manage-income-actions button:first-child {
   background: #dff2ff;
   color: #3f3437;
+  width: 60px;
 }
 
-.manage-income-actions button:last-child {
-  background: #ffd4dd;
-  color: #3f3437;
+.manage-income-actions button:first-child:hover {
+  background: #cae9fc;
+  transform: translate(2px, 2px);
 }
 
-.manage-income-actions button:hover {
-  transform: translateY(-1px);
+.manage-income-actions button:last-child:hover {
+  background: #ffc4d1;
+  transform: translate(2px, 2px);
 }
-
 .manage-income-actions button:active {
   transform: translate(2px, 2px);
   box-shadow: none;

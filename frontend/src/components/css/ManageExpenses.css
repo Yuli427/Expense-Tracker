@@ -16,12 +16,7 @@
   color: #3f3437;
 }
 
-.manage-expenses-subtitle {
-  margin-bottom: 24px;
 
-  font-size: 16px;
-  color: #6f5f63;
-}
 
 .expense-list {
   display: flex;
@@ -43,6 +38,10 @@
   border-radius: 10px;
 
   box-shadow: 4px 4px 0 #f2d5dc;
+
+  position: relative;
+
+  
 }
 
 .manage-expense-row strong {
@@ -105,18 +104,12 @@
 
 .manage-expense-actions button:first-child:hover {
   background: #cae9fc;
-}
-
-/* Delete */
-.manage-expense-actions button:last-child {
-  width: 60px;
-
-  background: #ffd4dd;
-  color: #955c63;
+  transform: translate(2px, 2px);
 }
 
 .manage-expense-actions button:last-child:hover {
   background: #ffc4d1;
+  transform: translate(2px, 2px);
 }
 
 .manage-expense-actions button:active {
@@ -180,6 +173,8 @@
 
   box-shadow: 3px 3px 0 #cde8fa;
 }
+
+
 .edit-expense-form button {
   padding: 11px 18px;
 
@@ -198,6 +193,7 @@
   box-shadow: 4px 4px 0 #aacfe8;
 }
 
+
 .edit-expense-form button:hover {
   background: #cae9fc;
 }
@@ -206,3 +202,8 @@
   transform: translate(2px, 2px);
   box-shadow: 1px 1px 0 #aacfe8;
 }
+
+.edit-expense-form input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+

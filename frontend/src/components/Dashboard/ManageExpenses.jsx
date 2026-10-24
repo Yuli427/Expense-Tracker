@@ -49,10 +49,6 @@ function ManageExpenses({
 
       <h2>All Expenses</h2>
 
-      <p className="manage-expenses-subtitle">
-        View and manage all your expenses.
-      </p>
-
 
       {/* Edit Expense */}
       {editingExpense && (
@@ -189,13 +185,14 @@ function ManageExpenses({
                   Edit
                 </button>
 
-                <button
+                <button className='delete-expense-x'
                   onClick={() =>
                     handleDeleteExpense(expense.id)
                   }
                 >
-                  Delete
+                  ✖
                 </button>
+
 
               </div>
 

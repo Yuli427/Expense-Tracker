@@ -30,10 +30,6 @@ function ManageIncome({
 
       <h2>All Income</h2>
 
-      <p className="manage-income-subtitle">
-        View and manage all your income.
-      </p>
-
 
       {editingIncome && (
         <div className="edit-income-form">
@@ -139,10 +135,10 @@ function ManageIncome({
                   Edit
                 </button>
 
-                <button
+                <button  className='className="delete-income-x'
                   onClick={() => handleDeleteIncome(income.id)}
                 >
-                  Delete
+                  ✖
                 </button>
 
               </div>

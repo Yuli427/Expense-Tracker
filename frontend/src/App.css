@@ -29,7 +29,7 @@ body {
 }
 
 
-/* 框本身 */
+
 .jornal-titlebar,
 .jornal-window-body {
   width: 420px;
@@ -39,7 +39,7 @@ body {
 }
 
 
-/* 顶部 */
+
 .jornal-titlebar {
   margin: 0 auto;
   padding: 13px 16px;
@@ -64,7 +64,7 @@ body {
 }
 
 
-/* 右上角小按钮 */
+
 .jornal-window-controls {
   display: flex;
   gap: 6px;
@@ -91,7 +91,7 @@ body {
 }
 
 
-/* 主卡片 */
+
 .jornal-window-body {
   margin: 0 auto;
 
@@ -107,7 +107,6 @@ body {
 }
 
 
-/* 标题 */
 .jornal-login-heading {
   text-align: center;
   margin-bottom: 28px;
@@ -138,7 +137,7 @@ body {
 }
 
 
-/* 输入框 */
+
 .jornal-field {
   margin-bottom: 20px;
 }
@@ -190,7 +189,7 @@ body {
 }
 
 
-/* 链接 */
+
 .jornal-links {
   display: flex;
   justify-content: space-between;
@@ -214,7 +213,7 @@ body {
 }
 
 
-/* 按钮区域 */
+
 .jornal-actions {
   display: flex;
   flex-direction: column;
@@ -266,7 +265,7 @@ body {
 }
 
 
-/* 像游戏按钮一样按下 */
+
 .y2k-button:active,
 .jornal-button:active {
   transform: translate(3px, 3px);
@@ -295,7 +294,7 @@ body {
 }
 
 
-/* 手机 */
+
 @media (max-width: 520px) {
   .jornal-titlebar,
   .jornal-window-body {
@@ -344,7 +343,7 @@ body {
 }
 
 
-/* Resend Verification 标题下面的小字 */
+
 .jornal-login-heading p {
   margin-top: 8px;
   margin-bottom: 0;
@@ -358,7 +357,7 @@ body {
 }
 
 
-/* Back to Login 单独居中 */
+
 .jornal-single-link {
   justify-content: center;
   text-align: center;
@@ -367,7 +366,7 @@ body {
 }
 
 
-/* 如果成功提示之前还没有这套 */
+
 .alert-success {
   margin-bottom: 20px;
 

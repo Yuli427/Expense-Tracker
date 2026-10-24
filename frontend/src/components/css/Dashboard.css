@@ -46,7 +46,7 @@
 }
 
 .add-expense-button:hover {
-  background: #ffc4d1;
+  transform: translateY(-2px);
 }
 
 .add-expense-button:active {
@@ -153,7 +153,7 @@
   padding: 12px 18px;
 
   background: #b9ddff;
-  color: #4e5c68;
+  color: #5a454b;
 
   border: 2px solid #806b70;
   border-radius: 8px;
@@ -165,6 +165,10 @@
   cursor: pointer;
 
   box-shadow: 4px 4px 0 #aacfe8;
+}
+
+.ai-card button:hover{
+  transform: translateY(-2px);
 }
 
 
@@ -374,6 +378,7 @@
 
   cursor: pointer;
 }
+
 
 .add-income-button:hover {
   transform: translateY(-2px);

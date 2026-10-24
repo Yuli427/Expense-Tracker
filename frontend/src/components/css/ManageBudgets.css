@@ -36,10 +36,10 @@
 
 .manage-budget-row {
   display: grid;
-  grid-template-columns: 1fr 120px 150px;
-  align-items: center;
+  max-width: 300px;
+  gap: 20px;
 
-  padding: 18px 20px;
+  padding: 20px;
 
   background: #fffdf9;
 
@@ -48,7 +48,9 @@
 
   box-shadow: 5px 5px 0 #dff2ff;
 
-   margin-bottom: 20px;
+  margin-bottom: 20px;
+
+  position: relative;
 }
 
 .manage-budget-row strong {
@@ -77,17 +79,7 @@
 }
 
 .budget-numbers {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-
-  position: relative;
-  left: -100px;
-  bottom: -15px;
-  
-
-  font-family: "Courier New", monospace;
-  color: #3f3437;
+  grid-column: 1 / -1;
 }
 
 .budget-numbers p {
@@ -110,34 +102,52 @@
 .manage-budget-actions button {
   padding: 8px 12px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border: 2px solid #806b70;
   border-radius: 7px;
 
-  box-shadow: 2px 2px 0 #806b70;
-
   font-family: "Courier New", monospace;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
 
   cursor: pointer;
 
+  box-shadow: 3px 3px 0 #d7bcc3;
+
 }
 
-.manage-budget-actions button:first-child {
+
+
+.manage-budget-actions button:first-child{
   background: #dff2ff;
   color: #3f3437;
 }
 
-.manage-budget-actions button:last-child {
+.manage-budget-actions button:nth-child(2) {
   background: #ffd4dd;
   color: #3f3437;
 }
+
 
 .manage-budget-actions button:hover {
   transform: translateY(-1px);
 }
 
 .manage-budget-actions button:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+
+
+.delete-budget-x:hover {
+  transform: translateY(-1px);
+}
+
+.delete-budget-x:active {
   transform: translate(2px, 2px);
   box-shadow: none;
 }
@@ -285,6 +295,10 @@
   
 }
 
+.add-budget-form input[type="month"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
 .add-budget-form select {
   width: 170px;
   color: #3f3437;
@@ -312,20 +326,40 @@
   box-shadow: none;
 }
 
-.budget-progress-label {
-  display: inline-block;
 
-  margin-top: 8px;
-  padding: 6px 10px;
 
-  background: #fff4f7;
+/* budget list header- filter */
+.budget-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 16px;
+}
+
+.budget-list-header h3 {
+  margin: 0;
+}
+
+.budget-list-header input {
+  padding: 8px 10px;
+
+  background: #fffdf9;
 
   border: 2px solid #806b70;
   border-radius: 8px;
 
-  box-shadow: 2px 2px 0 #806b70;
+  font-family: "Courier New", monospace;
+  font-size: 15px;
 
-  font-size: 20px;
-  font-weight: 700;
   color: #3f3437;
+
+  outline: none;
+}
+
+.budget-list-header input:focus {
+  box-shadow: 3px 3px 0 #fffdf9;
+}
+.budget-list-header input[type="month"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
 }

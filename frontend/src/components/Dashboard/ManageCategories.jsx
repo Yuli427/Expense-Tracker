@@ -63,7 +63,7 @@ function ManageCategories({
             <button
               onClick={() => handleDeleteCategory(category.id)}
             >
-              Delete
+              ✖
             </button>
           </div>
         ))}
