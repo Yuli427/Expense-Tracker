@@ -225,6 +225,7 @@ async function handleGenerateIncome() {
 
           {/* add expense form */}
           {showExpenseForm && (
+          <div className='overlay'>
             <div className="expense-form">
               <h2>Add New Expense</h2>
 
@@ -273,11 +274,12 @@ async function handleGenerateIncome() {
               </button>
 
             </div>
+            </div>
           )}
           {/* add expense card */}
           <div className="add-expense-card">
             <h2>Add Expense</h2>
-            <p>Record a new expense quickly.</p>
+            <p>Record a new expense.</p>
 
             <button className="add-expense-button"
               onClick={() => setShowExpenseForm(true)}
@@ -288,6 +290,7 @@ async function handleGenerateIncome() {
 
           {/* add income form */}
           {showIncomeForm && (
+          <div className='overlay'>
           <div className="income-form">
             <h2>Add New Income</h2>
 
@@ -332,11 +335,12 @@ async function handleGenerateIncome() {
               Add Income
             </button>
           </div>
+          </div>
         )}
 
         <div className="add-income-card">
           <h2>Add Income</h2>
-          <p>Record a new income quickly.</p>
+          <p>Record a new income.</p>
 
           <button
             className="add-income-button"

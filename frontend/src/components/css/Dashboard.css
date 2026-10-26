@@ -57,7 +57,7 @@
 
 /* add expense card */
 .add-expense-card {
-  width: 320px;
+  width: 225px;
   padding: 24px;
 
   background: #fffdf9;
@@ -66,7 +66,7 @@
   border-radius: 12px;
 
   box-shadow: 6px 6px 0 #e7bfc8;
-
+  
   text-align: left;
 }
 
@@ -176,20 +176,24 @@
 .expense-form {
   width: 340px;
   padding: 24px;
+  
+  position: fixed;
 
   background: #fffdf9;
 
   border: 3px solid #806b70;
   border-radius: 12px;
 
-  box-shadow: 6px 6px 0 #e7bfc8;
 
   display: flex;
   flex-direction: column;
   gap: 14px;
-
+  
   font-family: "Courier New", monospace;
+  z-index: 1001;
 }
+
+
 
 .expense-form h2 {
   margin: 0 0 6px;
@@ -199,6 +203,23 @@
   font-weight: 800;
 
   color: #5b4a4f;
+}
+.overlay{
+   position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1000;
 }
 
 .expense-form input,
@@ -246,6 +267,9 @@
   cursor: pointer;
 
   box-shadow: 4px 4px 0 #d7bcc3;
+}
+.expense-form button:hover{
+  transform: translate(2px,2px);
 }
 
 
@@ -336,6 +360,7 @@
 
 /* income */
 .add-income-card {
+  width: 225px;
   background: #fffdf9;
   border: 3px solid #806b70;
   border-radius: 12px;
@@ -399,6 +424,8 @@
   padding: 24px;
 
   background: #fffdf9;
+  
+  position: fixed;
 
   border: 3px solid #806b70;
 
@@ -413,6 +440,8 @@
   gap: 14px;
 
   font-family: "Courier New", monospace;
+
+  z-index: 1001;
 }
 
 .income-form h2 {
@@ -482,6 +511,9 @@
   box-shadow: 4px 4px 0 #d7bcc3;
 }
 
+.income-form button:hover{
+  transform: translate(2px,2px);
+}
 
 /* income date input */
 
